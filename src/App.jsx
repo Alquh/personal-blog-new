@@ -10,7 +10,7 @@ function App() {
     <div className="flex flex-col lg:flex-row justify-between items-start p-6 bg-zinc-800 text-white pt-6">
       <aside className="w-full lg:w-1/4 text-center lg:text-left">
         <img
-          src="../src/assets/headshot.jpg"
+          src="/static/headshot.jpg"
           alt="Profile Picture"
           className="rounded-full w-48 h-48 mx-auto lg:mx-0 mb-4"
         ></img>
