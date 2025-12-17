@@ -39,7 +39,7 @@ export function Header({ theme, toggleTheme }: HeaderProps) {
             whileHover={{ scale: 1.05 }}
             className="text-xl font-bold text-foreground"
           >
-            MG
+            Matt Gilbert
           </motion.a>
 
           {/* Desktop Navigation */}
