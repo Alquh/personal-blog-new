@@ -121,24 +121,6 @@ export function About() {
           </a>
         </div>
 
-        {/* Stats and Streak Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
-          <div className="bg-card rounded-xl p-4 border border-border flex items-center justify-center">
-            <img
-              src="https://github-readme-stats.vercel.app/api?username=Alquh&show_icons=true&hide_border=true&bg_color=1e293b&title_color=22d3ee&icon_color=22d3ee&text_color=f8fafc&hide_title=false&include_all_commits=true&count_private=true"
-              alt="GitHub Stats for Alquh"
-              className="max-w-full h-auto"
-            />
-          </div>
-          <div className="bg-card rounded-xl p-4 border border-border flex items-center justify-center">
-            <img
-              src="https://github-readme-streak-stats.herokuapp.com/?user=Alquh&hide_border=true&background=1e293b&ring=22d3ee&fire=22d3ee&currStreakLabel=22d3ee&sideLabels=f8fafc&currStreakNum=f8fafc&sideNums=f8fafc&dates=94a3b8"
-              alt="GitHub Streak for Alquh"
-              className="max-w-full h-auto"
-            />
-          </div>
-        </div>
-
         {/* Contribution Graph */}
         <div className="bg-card rounded-xl p-6 border border-border overflow-x-auto">
           <img
