@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Section, SectionHeader } from '@/components/layout/Section';
 import { experiences } from '@/data/experience';
+import { personalInfo } from '@/data/social';
 
 export function Experience() {
   return (
@@ -9,6 +10,21 @@ export function Experience() {
         title="Work Experience"
         subtitle="My professional journey in software quality and test engineering"
       />
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="mb-10 rounded-2xl border border-primary/20 bg-gradient-to-r from-primary/10 via-card to-card p-6"
+      >
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+          Current Focus
+        </p>
+        <h3 className="mt-3 text-2xl font-bold text-foreground md:text-3xl">
+          {personalInfo.title}
+        </h3>
+      </motion.div>
 
       <div className="relative">
         {/* Timeline line */}

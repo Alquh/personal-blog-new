@@ -28,7 +28,7 @@ export const navItems: NavItem[] = [
 
 export const personalInfo = {
   name: 'Matt Gilbert',
-  title: 'Senior Test Engineer II',
+  title: 'SDET/Principal Test Engineer I',
   tagline: 'Founder of ClearInsite.io & CoachingPortal.io',
   email: '', // Add your email if you want it displayed
   resumeUrl: '/static/Resume-Matt-Gilbert.pdf',

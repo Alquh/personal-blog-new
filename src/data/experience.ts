@@ -2,9 +2,16 @@ import { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
+    id: 'sdet-principal-test-engineer-i',
+    title: 'SDET/Principal Test Engineer I',
+    period: '2026 - Present',
+    description:
+      'Leading quality engineering strategy with a focus on agentic AI tooling exploration and building out AI standards that improve delivery confidence, tooling, and team practices across the organization.',
+  },
+  {
     id: 'senior-test-engineer-ii',
     title: 'Senior Test Engineer II',
-    period: '2023 - Present',
+    period: '2023 - 2026',
     description:
       'Still leading a small team working on a client-facing web app with data-driven analytics, which our clients rely on to make business decisions. I\'ve been working on modernizing our test practice by introducing new tools and techniques to the team.',
   },
