@@ -12,7 +12,7 @@ export function About() {
     <Section id="about" className="bg-card/50">
       <SectionHeader
         title="About Me"
-        subtitle="A passionate Senior Test Engineer dedicated to improving software delivery"
+        subtitle="A passionate SDET/Principal Test Engineer I dedicated to improving software delivery"
       />
 
       <div className="grid lg:grid-cols-2 gap-12 items-center">

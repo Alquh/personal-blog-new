@@ -14,7 +14,7 @@ export function Footer() {
               Matt Gilbert
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Senior Test Engineer with 10+ years of experience in software testing,
+              SDET/Principal Test Engineer I with 13+ years of experience in software testing,
               test automation, and quality engineering.
             </p>
           </div>

@@ -15,10 +15,10 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Matt Gilbert | Senior Test Engineer</title>
+        <title>Matt Gilbert | SDET/Principal Test Engineer I</title>
         <meta
           name="description"
-          content="Matt Gilbert - Senior Test Engineer II with 10+ years of experience in software testing, test automation, and quality engineering. Specializing in API testing, framework development, and process improvement."
+          content="Matt Gilbert - SDET/Principal Test Engineer I with 13+ years of experience in software testing, test automation, and quality engineering. Specializing in API testing, framework development, and process improvement."
         />
         <meta
           name="keywords"
@@ -30,11 +30,11 @@ function App() {
         <meta property="og:url" content="https://mattgilbert.dev/" />
         <meta
           property="og:title"
-          content="Matt Gilbert | Senior Test Engineer"
+          content="Matt Gilbert | SDET/Principal Test Engineer I"
         />
         <meta
           property="og:description"
-          content="Senior Test Engineer II with 10+ years of experience in software testing, test automation, and quality engineering."
+          content="SDET/Principal Test Engineer I with 13+ years of experience in software testing, test automation, and quality engineering."
         />
         <meta property="og:image" content="/static/headshot.jpg" />
 
@@ -43,11 +43,11 @@ function App() {
         <meta property="twitter:url" content="https://mattgilbert.dev/" />
         <meta
           property="twitter:title"
-          content="Matt Gilbert | Senior Test Engineer"
+          content="Matt Gilbert | SDET/Principal Test Engineer I"
         />
         <meta
           property="twitter:description"
-          content="Senior Test Engineer II with 10+ years of experience in software testing, test automation, and quality engineering."
+          content="SDET/Principal Test Engineer I with 13+ years of experience in software testing, test automation, and quality engineering."
         />
         <meta property="twitter:image" content="/static/headshot.jpg" />
 
