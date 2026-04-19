@@ -76,7 +76,7 @@ export function SocialLinks({ className = '', iconSize = 'md' }: SocialLinksProp
       <motion.a
         whileHover={{ scale: 1.1, y: -2 }}
         whileTap={{ scale: 0.95 }}
-        href="mailto:matt.beardedtester@gmail.com
+        href="mailto:matt.beardedtester@gmail.com"
         className="text-muted-foreground hover:text-primary transition-colors"
         aria-label="Email"
       >
