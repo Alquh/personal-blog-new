@@ -25,32 +25,6 @@ function App() {
           content="Test Engineer, QA Engineer, Test Automation, Software Testing, Quality Assurance, API Testing, Python, TypeScript, Java"
         />
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mattgilbert.dev/" />
-        <meta
-          property="og:title"
-          content="Matt Gilbert | SDET/Principal Test Engineer I"
-        />
-        <meta
-          property="og:description"
-          content="SDET/Principal Test Engineer I with 13+ years of experience in software testing, test automation, and quality engineering."
-        />
-        <meta property="og:image" content="/static/headshot.jpg" />
-
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://mattgilbert.dev/" />
-        <meta
-          property="twitter:title"
-          content="Matt Gilbert | SDET/Principal Test Engineer I"
-        />
-        <meta
-          property="twitter:description"
-          content="SDET/Principal Test Engineer I with 13+ years of experience in software testing, test automation, and quality engineering."
-        />
-        <meta property="twitter:image" content="/static/headshot.jpg" />
-
         {/* Theme color */}
         <meta
           name="theme-color"
