@@ -3,23 +3,23 @@ import { Expertise } from '@/types';
 export const expertiseItems: Expertise[] = [
   {
     id: 'test-automation',
-    title: 'Test Automation',
+    title: 'Test automation',
     description:
-      'Seamlessly fit a Test automation solution at the necessary layers that work within your current workflows and processes.',
+      'Fit automation at the layers where it gives your team faster feedback without adding brittle maintenance work.',
     icon: 'flask',
   },
   {
     id: 'agentic-workflows',
-    title: 'Agentic Workflows & AI Tooling',
+    title: 'Agentic workflows & AI tooling',
     description:
-      'Building intelligent agentic workflows and AI-powered tooling to enhance testing efficiency, automate repetitive tasks, and augment test team capabilities.',
+      'Build AI-assisted tooling that removes repeat work, improves test coverage decisions, and keeps humans in control.',
     icon: 'sparkles',
   },
   {
     id: 'process-improvement',
-    title: 'Process Improvement',
+    title: 'Process improvement',
     description:
-      'Diagnosing problems in the existing workflows and/or lack of processes.',
+      'Diagnose slow handoffs, unclear ownership, and gaps that make releases harder than they need to be.',
     icon: 'chevron-double',
   },
   {
@@ -31,23 +31,23 @@ export const expertiseItems: Expertise[] = [
   },
   {
     id: 'framework-development',
-    title: 'Framework Development',
+    title: 'Framework development',
     description:
-      "Framework research, design & development tailored to the organization's needs.",
+      "Research, design, and develop frameworks tailored to the organization's delivery model.",
     icon: 'code',
   },
   {
     id: 'documentation',
     title: 'Documentation',
     description:
-      'Creating documentation around the processes and test design as well as best practices for the consumption of the Test team.',
+      'Create documentation for testing process, test design, and working agreements the team can actually use.',
     icon: 'document',
   },
   {
     id: 'modernization',
     title: 'Modernization',
     description:
-      'All of these combined will help your organization ship faster, more confidently, and deliver constant value to your end-users.',
+      'Combine strategy, automation, and coaching so teams can ship faster with fewer avoidable surprises.',
     icon: 'rocket',
   },
 ];

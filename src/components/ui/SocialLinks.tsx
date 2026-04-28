@@ -22,7 +22,7 @@ export function SocialLinks({ className = '', iconSize = 'md' }: SocialLinksProp
         href="https://linkedin.com/in/mattgilbert90"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-muted-foreground hover:text-primary transition-colors"
+        className="rounded-md text-muted-foreground transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background"
         aria-label="LinkedIn Profile"
       >
         <svg
@@ -41,7 +41,7 @@ export function SocialLinks({ className = '', iconSize = 'md' }: SocialLinksProp
         href="https://github.com/Alquh"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-muted-foreground hover:text-primary transition-colors"
+        className="rounded-md text-muted-foreground transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background"
         aria-label="GitHub Profile"
       >
         <svg
@@ -60,7 +60,7 @@ export function SocialLinks({ className = '', iconSize = 'md' }: SocialLinksProp
         href="https://beardedtester.substack.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-muted-foreground hover:text-primary transition-colors"
+        className="rounded-md text-muted-foreground transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background"
         aria-label="Substack Blog"
       >
         <svg
@@ -77,7 +77,7 @@ export function SocialLinks({ className = '', iconSize = 'md' }: SocialLinksProp
         whileHover={{ scale: 1.1, y: -2 }}
         whileTap={{ scale: 0.95 }}
         href="mailto:matt.beardedtester@gmail.com"
-        className="text-muted-foreground hover:text-primary transition-colors"
+        className="rounded-md text-muted-foreground transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background"
         aria-label="Email"
       >
         <svg

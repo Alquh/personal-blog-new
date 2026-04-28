@@ -12,17 +12,17 @@ export function Blog() {
   return (
     <Section id="blog" className="bg-card/50">
       <SectionHeader
-        title="Latest from My Blog"
+        title="Latest writing"
         subtitle="Thoughts and insights on software testing, automation, and quality engineering"
         centered
       />
 
       {loading ? (
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid gap-5 md:grid-cols-3">
           {[...Array(3)].map((_, i) => (
             <div
               key={i}
-              className="bg-card rounded-xl p-6 border border-border animate-pulse"
+              className="animate-pulse rounded-lg border border-border/70 bg-card/80 p-6"
             >
               <div className="h-4 bg-muted rounded w-1/3 mb-4" />
               <div className="h-6 bg-muted rounded w-full mb-3" />
@@ -38,7 +38,7 @@ export function Blog() {
           className="text-center py-12"
         >
           <p className="text-muted-foreground mb-6">
-            Unable to load blog posts. Check out my Substack directly!
+            Unable to load blog posts. You can read them on Substack directly.
           </p>
           <Button
             as="a"
@@ -52,7 +52,7 @@ export function Blog() {
         </motion.div>
       ) : (
         <>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid gap-5 md:grid-cols-3">
             {posts.map((post, index) => (
               <motion.a
                 key={post.link}
@@ -66,7 +66,7 @@ export function Blog() {
                 className="block group"
               >
                 <Card className="h-full">
-                  <p className="text-sm text-primary mb-3">{post.pubDate}</p>
+                  <p className="mb-3 text-sm font-semibold text-primary">{post.pubDate}</p>
                   <CardTitle className="mb-3 group-hover:text-primary transition-colors line-clamp-2">
                     {post.title}
                   </CardTitle>
@@ -96,7 +96,7 @@ export function Blog() {
               rel="noopener noreferrer"
               variant="outline"
             >
-              View All Posts
+              View all posts
               <ExternalLinkIcon className="ml-2" />
             </Button>
           </motion.div>

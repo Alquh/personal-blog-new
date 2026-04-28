@@ -28,16 +28,16 @@ export function Header({ theme, toggleTheme }: HeaderProps) {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-background/80 backdrop-blur-lg border-b border-border shadow-sm'
+          ? 'border-b border-border/70 bg-background/82 shadow-[0_12px_40px_rgb(var(--foreground)/0.06)] backdrop-blur-xl'
           : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-16">
           <motion.a
             href="#"
             whileHover={{ scale: 1.05 }}
-            className="text-xl font-bold text-foreground"
+            className="font-display text-xl font-bold text-foreground"
           >
             Matt Gilbert
           </motion.a>
@@ -49,7 +49,7 @@ export function Header({ theme, toggleTheme }: HeaderProps) {
                 key={item.href}
                 href={item.href}
                 whileHover={{ y: -2 }}
-                className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+                className="text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background"
               >
                 {item.label}
               </motion.a>
@@ -62,7 +62,7 @@ export function Header({ theme, toggleTheme }: HeaderProps) {
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 text-foreground"
+              className="rounded-md p-2 text-foreground transition-colors hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary"
               aria-label="Toggle menu"
             >
               <svg
@@ -106,7 +106,7 @@ export function Header({ theme, toggleTheme }: HeaderProps) {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
+                    className="block rounded-md px-4 py-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                   >
                     {item.label}
                   </a>

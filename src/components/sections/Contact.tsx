@@ -41,19 +41,19 @@ export function Contact() {
   return (
     <Section id="contact">
       <SectionHeader
-        title="Get in Touch"
-        subtitle="Have a question or want to work together? Send me a message!"
+        title="Get in touch"
+        subtitle="Have a question or want to work together? Send me a message."
         centered
       />
 
-      <div className="max-w-2xl mx-auto">
+      <div className="mx-auto max-w-2xl">
         {status === 'success' ? (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="text-center p-8 bg-card rounded-xl border border-primary/50"
+            className="rounded-lg border border-primary/50 bg-card/80 p-8 text-center"
           >
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-md bg-primary/10">
               <svg
                 className="w-8 h-8 text-primary"
                 fill="none"
@@ -69,13 +69,13 @@ export function Contact() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">
-              Message Sent!
+              Message sent
             </h3>
             <p className="text-muted-foreground mb-6">
               Thank you for reaching out. I'll get back to you as soon as possible.
             </p>
             <Button onClick={() => setStatus('idle')} variant="outline">
-              Send Another Message
+              Send another message
             </Button>
           </motion.div>
         ) : (
@@ -117,7 +117,7 @@ export function Contact() {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  className="w-full rounded-md border border-border bg-card px-4 py-3 text-foreground transition-all placeholder:text-muted-foreground focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="Your name"
                 />
               </div>
@@ -138,7 +138,7 @@ export function Contact() {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  className="w-full rounded-md border border-border bg-card px-4 py-3 text-foreground transition-all placeholder:text-muted-foreground focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="your@email.com"
                 />
               </div>
@@ -160,8 +160,8 @@ export function Contact() {
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
-                className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
-                placeholder="Your message..."
+                className="w-full resize-none rounded-md border border-border bg-card px-4 py-3 text-foreground transition-all placeholder:text-muted-foreground focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="Your message"
               />
             </div>
 
@@ -169,9 +169,9 @@ export function Contact() {
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="text-red-500 text-sm"
+                className="text-sm text-red-500"
               >
-                Something went wrong. Please try again or email me directly.
+                We couldn't send your message. Please try again or email me directly.
               </motion.p>
             )}
 
@@ -204,10 +204,10 @@ export function Contact() {
                         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                       />
                     </svg>
-                    Sending...
+                    Sending
                   </span>
                 ) : (
-                  'Send Message'
+                  'Send message'
                 )}
               </Button>
             </div>

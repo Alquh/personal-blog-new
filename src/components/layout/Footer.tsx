@@ -5,15 +5,15 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t border-border">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="border-t border-border bg-card/70">
+      <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-[1.4fr_0.8fr_1fr]">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold text-foreground mb-4">
+            <h3 className="mb-4 font-display text-2xl font-bold text-foreground">
               Matt Gilbert
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
               SDET/Principal Test Engineer I with 13+ years of experience in software testing,
               test automation, and quality engineering.
             </p>
@@ -21,13 +21,13 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
+            <h4 className="mb-4 font-semibold text-foreground">Navigation</h4>
             <ul className="space-y-2">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                    className="text-sm text-muted-foreground transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary"
                   >
                     {item.label}
                   </a>
@@ -38,19 +38,19 @@ export function Footer() {
 
           {/* Connect */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Connect</h4>
+            <h4 className="mb-4 font-semibold text-foreground">Connect</h4>
             <SocialLinks iconSize="md" />
-            <p className="mt-4 text-muted-foreground text-sm">
+            <p className="mt-4 text-sm text-muted-foreground">
               Let's connect and discuss how I can help improve your testing practices.
             </p>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
+          <p className="text-sm text-muted-foreground">
             {currentYear} Matt Gilbert. All rights reserved.
           </p>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-sm text-muted-foreground">
             Built with React & Tailwind CSS
           </p>
         </div>

@@ -12,7 +12,7 @@ export function Card({ children, className = '', hover = true }: CardProps) {
     <motion.div
       whileHover={hover ? { y: -4, scale: 1.01 } : undefined}
       transition={{ duration: 0.2 }}
-      className={`bg-card text-card-foreground rounded-xl border border-border p-6 ${
+      className={`rounded-lg border border-border/70 bg-card/80 p-6 text-card-foreground shadow-[0_1px_0_rgb(var(--foreground)/0.04)] backdrop-blur ${
         hover ? 'card-hover' : ''
       } ${className}`}
     >
@@ -37,7 +37,7 @@ interface CardTitleProps {
 
 export function CardTitle({ children, className = '' }: CardTitleProps) {
   return (
-    <h3 className={`text-lg font-semibold text-foreground ${className}`}>
+    <h3 className={`text-xl font-semibold leading-tight text-foreground ${className}`}>
       {children}
     </h3>
   );
@@ -53,7 +53,7 @@ export function CardDescription({
   className = '',
 }: CardDescriptionProps) {
   return (
-    <p className={`text-muted-foreground text-sm leading-relaxed ${className}`}>
+    <p className={`text-sm leading-relaxed text-muted-foreground text-pretty ${className}`}>
       {children}
     </p>
   );

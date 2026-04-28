@@ -21,12 +21,12 @@ export function Section({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className={`py-16 md:py-24 ${className}`}
+      className={`py-20 md:py-28 ${className}`}
     >
       {fullWidth ? (
         children
       ) : (
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">{children}</div>
       )}
     </motion.section>
   );
@@ -44,7 +44,7 @@ export function SectionHeader({
   centered = false,
 }: SectionHeaderProps) {
   return (
-    <div className={`mb-12 ${centered ? 'text-center' : ''}`}>
+    <div className={`mb-14 ${centered ? 'text-center' : ''}`}>
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,9 @@ export function SectionHeader({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-muted-foreground text-lg max-w-2xl"
+          className={`max-w-2xl text-lg leading-relaxed text-muted-foreground text-pretty ${
+            centered ? 'mx-auto' : ''
+          }`}
         >
           {subtitle}
         </motion.p>

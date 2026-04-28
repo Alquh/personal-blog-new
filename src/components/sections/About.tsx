@@ -2,20 +2,20 @@ import { motion } from 'framer-motion';
 import { Section, SectionHeader } from '@/components/layout/Section';
 
 const highlights = [
-  { label: '10+', description: 'Years Experience' },
-  { label: '6+', description: 'Industries' },
-  { label: '4+', description: 'Programming Languages' },
+  { label: '10+', description: 'years experience' },
+  { label: '6+', description: 'industries' },
+  { label: '4+', description: 'languages' },
 ];
 
 export function About() {
   return (
-    <Section id="about" className="bg-card/50">
+    <Section id="about" className="bg-card/35">
       <SectionHeader
-        title="About Me"
-        subtitle="A passionate SDET/Principal Test Engineer I dedicated to improving software delivery"
+        title="Quality work, without ceremony"
+        subtitle="I help teams turn scattered testing practice into reliable delivery habits."
       />
 
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -24,7 +24,7 @@ export function About() {
             transition={{ duration: 0.5 }}
             className="space-y-6"
           >
-            <p className="text-muted-foreground leading-relaxed text-lg">
+            <p className="text-lg leading-relaxed text-muted-foreground text-pretty">
               I have been in the Software Testing field for 10+ years now. I've had the
               opportunity to take on many different roles in varying industries like{' '}
               <span className="text-foreground font-medium">Insurance</span>,{' '}
@@ -34,20 +34,20 @@ export function About() {
               contract work.
             </p>
 
-            <p className="text-muted-foreground leading-relaxed text-lg">
+            <p className="text-lg leading-relaxed text-muted-foreground text-pretty">
               Across these different industries, I also gained experience with several
               different testing techniques. These include{' '}
-              <span className="text-primary font-medium">API testing</span>,{' '}
-              <span className="text-primary font-medium">Integration</span>,{' '}
-              <span className="text-primary font-medium">Performance</span>,{' '}
-              <span className="text-primary font-medium">Accessibility</span>,{' '}
-              <span className="text-primary font-medium">UI</span>,{' '}
-              <span className="text-primary font-medium">Usability</span>,{' '}
-              <span className="text-primary font-medium">Mobile</span>, and{' '}
-              <span className="text-primary font-medium">Contract Testing</span>.
+                <span className="font-medium text-primary">API testing</span>,{' '}
+                <span className="font-medium text-primary">integration</span>,{' '}
+                <span className="font-medium text-primary">performance</span>,{' '}
+                <span className="font-medium text-primary">accessibility</span>,{' '}
+                <span className="font-medium text-primary">UI</span>,{' '}
+                <span className="font-medium text-primary">usability</span>,{' '}
+                <span className="font-medium text-primary">mobile</span>, and{' '}
+                <span className="font-medium text-primary">contract testing</span>.
             </p>
 
-            <p className="text-muted-foreground leading-relaxed text-lg">
+            <p className="text-lg leading-relaxed text-muted-foreground text-pretty">
               I've developed Test Automation Frameworks in{' '}
               <span className="text-foreground font-medium">Java</span>,{' '}
               <span className="text-foreground font-medium">C#</span>,{' '}
@@ -63,7 +63,7 @@ export function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-3">
             {highlights.map((item, index) => (
               <motion.div
                 key={item.label}
@@ -71,9 +71,9 @@ export function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="bg-card rounded-xl p-6 text-center border border-border"
+                className="rounded-lg border border-border/70 bg-card/80 p-5 text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                <div className="mb-2 font-display text-4xl font-bold text-primary md:text-5xl">
                   {item.label}
                 </div>
                 <div className="text-sm text-muted-foreground">{item.description}</div>
@@ -86,9 +86,9 @@ export function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="mt-8 p-6 bg-gradient-to-br from-primary/10 to-cyan-400/10 rounded-xl border border-primary/20"
+            className="mt-6 rounded-lg border-l-4 border-primary bg-secondary/70 p-6"
           >
-            <p className="text-foreground font-medium text-center">
+            <p className="text-center font-medium text-foreground">
               "Quality is not an act, it is a habit."
             </p>
             <p className="text-muted-foreground text-sm text-center mt-2">
@@ -107,7 +107,7 @@ export function About() {
         className="mt-16"
       >
         <div className="flex items-center justify-between mb-6">
-          <h3 className="text-xl font-semibold text-foreground">GitHub Activity</h3>
+          <h3 className="text-xl font-semibold text-foreground">GitHub activity</h3>
           <a
             href="https://github.com/Alquh"
             target="_blank"
@@ -122,7 +122,7 @@ export function About() {
         </div>
 
         {/* Contribution Graph */}
-        <div className="bg-card rounded-xl p-6 border border-border overflow-x-auto">
+        <div className="overflow-x-auto rounded-lg border border-border/70 bg-card/80 p-5">
           <img
             src="https://ghchart.rshah.org/22d3ee/Alquh"
             alt="GitHub Contribution Graph for Alquh"

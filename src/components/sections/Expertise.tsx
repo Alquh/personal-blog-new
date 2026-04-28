@@ -26,13 +26,14 @@ export function Expertise() {
   return (
     <Section id="expertise">
       <SectionHeader
-        title="My Expertise"
-        subtitle="Specialized services to help your team deliver quality software"
+        title="What I make sturdier"
+        subtitle="Practical testing leadership across the places software usually bends first."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-6">
         {expertiseItems.map((item, index) => {
           const Icon = iconMap[item.icon] || FlaskIcon;
+          const spanClass = index === 0 || index === 3 ? 'md:col-span-4' : 'md:col-span-2';
 
           return (
             <motion.div
@@ -41,13 +42,17 @@ export function Expertise() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              className={spanClass}
             >
-              <Card className="h-full">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-cyan-400 flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6 text-white" />
+              <Card className="flex h-full flex-col justify-between">
+                <div>
+                  <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-md bg-primary/12 text-primary">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <CardTitle className="mb-3">{item.title}</CardTitle>
+                  <CardDescription>{item.description}</CardDescription>
                 </div>
-                <CardTitle className="mb-3">{item.title}</CardTitle>
-                <CardDescription>{item.description}</CardDescription>
+                <div className="mt-8 h-px w-16 bg-primary/40" />
               </Card>
             </motion.div>
           );
